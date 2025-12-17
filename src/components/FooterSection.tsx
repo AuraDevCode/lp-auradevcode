@@ -56,15 +56,14 @@ const FooterSection = () => {
                 Software house premium. Transformamos complexidade em elegância digital.
               </p>
               <div className="flex gap-4">
-                {["GitHub", "LinkedIn", "Twitter"].map((social) => (
-                  <a
-                    key={social}
-                    href="#"
-                    className="px-4 py-2 rounded-lg bg-card border border-border hover:border-primary/50 text-sm font-medium text-muted-foreground hover:text-foreground transition-all duration-300"
-                  >
-                    {social}
-                  </a>
-                ))}
+                <a
+                  href="https://instagram.com/auradev.io" // Exemplo de link para Instagram
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-card border border-border hover:border-primary/50 text-sm font-medium text-muted-foreground hover:text-foreground transition-all duration-300"
+                >
+                  Instagram
+                </a>
               </div>
             </div>
 
