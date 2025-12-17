@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import auraLogo from "@/assets/aura-logo.png";
 
+const whatsappLink = "https://wa.me/5579996827342?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Aura%20Dev.";
+
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden cyber-grid">
@@ -45,10 +47,12 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
-          <Button className="neon-button px-8 py-6 text-lg rounded-lg">
-            Iniciar meu projeto
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <Button className="neon-button px-8 py-6 text-lg rounded-lg">
+              Iniciar meu projeto
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </a>
           <Link to="/portfolio">
             <Button variant="outline" className="px-8 py-6 text-lg rounded-lg border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 w-full">
               Ver portfólio

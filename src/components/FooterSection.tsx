@@ -2,6 +2,8 @@ import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 import auraLogo from "@/assets/aura-logo.png";
 
+const whatsappLink = "https://wa.me/5579996827342?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20call%20estrat%C3%A9gica%20com%20a%20Aura%20Dev.";
+
 const FooterSection = () => {
   return (
     <footer className="relative">
@@ -20,10 +22,12 @@ const FooterSection = () => {
               Agende uma call estratégica gratuita. Em 30 minutos, vamos entender seu desafio 
               e mostrar como a Aura pode transformar sua visão em realidade.
             </p>
-            <Button className="neon-button px-10 py-7 text-lg rounded-xl">
-              Agendar call gratuita
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              <Button className="neon-button px-10 py-7 text-lg rounded-xl">
+                Agendar call gratuita
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </a>
             <p className="text-sm text-muted-foreground mt-4">
               Sem compromisso. Sem vendas agressivas. Apenas valor.
             </p>

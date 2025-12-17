@@ -11,6 +11,8 @@ const navLinks = [
   { label: "Contato", href: "#contato", isRoute: false },
 ];
 
+const whatsappLink = "https://wa.me/5579996827342?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Aura%20Dev.";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -70,9 +72,11 @@ const Navbar = () => {
 
           {/* CTA */}
           <div className="hidden md:block">
-            <Button className="neon-button px-6 py-2 rounded-lg text-sm">
-              Iniciar projeto
-            </Button>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              <Button className="neon-button px-6 py-2 rounded-lg text-sm">
+                Iniciar projeto
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -113,9 +117,11 @@ const Navbar = () => {
                   </a>
                 )
               ))}
-              <Button className="neon-button px-6 py-3 rounded-lg text-sm mt-2">
-                Iniciar projeto
-              </Button>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <Button className="neon-button px-6 py-3 rounded-lg text-sm mt-2">
+                  Iniciar projeto
+                </Button>
+              </a>
             </div>
           </div>
         )}
