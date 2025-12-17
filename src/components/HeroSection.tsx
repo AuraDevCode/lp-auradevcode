@@ -61,12 +61,11 @@ const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>
+        <div className="mt-20 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.4s"}>
           {[
             { value: "50+", label: "Projetos entregues" },
             { value: "99%", label: "Uptime garantido" },
             { value: "24h", label: "Tempo de resposta" },
-            { value: "5★", label: "Avaliação média" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-aura">{stat.value}</div>
