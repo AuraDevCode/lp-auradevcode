@@ -82,15 +82,15 @@ const FooterSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-primary" />
-                  <span>hello@auradev.io</span>
+                  <span>contato.auradev@gmail.com</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-primary" />
-                  <span>+55 11 99999-9999</span>
+                  <span>+55 79 99682-7342</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-primary" />
-                  <span>São Paulo, Brasil</span>
+                  <span>Aracaju, Sergipe, Brasil</span>
                 </li>
               </ul>
             </div>
