@@ -4,11 +4,11 @@ const technologies = [
   { name: "TypeScript", category: "Language" },
   { name: "Node.js", category: "Backend" },
   { name: "PHP", category: "Backend" },
+  { name: "Laravel", category: "Backend" }, // Adicionado Laravel
   { name: "MySQL", category: "Database" },
   { name: "MongoDB", category: "Database" },
   { name: "AWS", category: "Cloud" },
   { name: "Docker", category: "DevOps" },
-  { name: "Kubernetes", category: "DevOps" },
   { name: "Tailwind", category: "Frontend" },
 ];
 
