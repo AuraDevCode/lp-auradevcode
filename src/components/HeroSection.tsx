@@ -1,4 +1,5 @@
 import { ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import auraLogo from "@/assets/aura-logo.png";
 
@@ -48,9 +49,11 @@ const HeroSection = () => {
             Iniciar meu projeto
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
-          <Button variant="outline" className="px-8 py-6 text-lg rounded-lg border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300">
-            Ver portfólio
-          </Button>
+          <Link to="/portfolio">
+            <Button variant="outline" className="px-8 py-6 text-lg rounded-lg border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 w-full">
+              Ver portfólio
+            </Button>
+          </Link>
         </div>
 
         {/* Stats */}
