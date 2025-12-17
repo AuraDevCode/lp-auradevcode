@@ -1,5 +1,6 @@
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "./ui/button";
+import auraLogo from "@/assets/aura-logo.png";
 
 const FooterSection = () => {
   return (
@@ -36,12 +37,17 @@ const FooterSection = () => {
           <div className="grid md:grid-cols-4 gap-12">
             {/* Brand */}
             <div className="md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-aura-purple to-digital-cyan flex items-center justify-center">
-                  <span className="text-xl font-bold text-background">A</span>
-                </div>
+              <div className="flex items-center gap-3 mb-4">
+                <img 
+                  src={auraLogo} 
+                  alt="Aura Dev Logo" 
+                  className="w-12 h-12 object-contain"
+                />
                 <span className="text-2xl font-bold">Aura Dev</span>
               </div>
+              <p className="text-muted-foreground max-w-sm mb-2 italic font-medium text-gradient-aura">
+                A inteligência por trás do código
+              </p>
               <p className="text-muted-foreground max-w-sm mb-6">
                 Software house premium. Transformamos complexidade em elegância digital.
               </p>

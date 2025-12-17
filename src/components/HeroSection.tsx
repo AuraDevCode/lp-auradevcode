@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
+import auraLogo from "@/assets/aura-logo.png";
 
 const HeroSection = () => {
   return (
@@ -13,17 +14,26 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
+        {/* Logo animation */}
+        <div className="mb-8 animate-fade-up">
+          <img 
+            src={auraLogo} 
+            alt="Aura Dev Logo" 
+            className="w-24 h-24 md:w-32 md:h-32 mx-auto object-contain animate-float"
+          />
+        </div>
+
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-fade-up">
           <Sparkles className="w-4 h-4 text-primary" />
           <span className="text-sm font-mono text-primary">Software House Premium</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <span className="text-foreground">Criamos </span>
-          <span className="text-gradient-aura">Software</span>
+          <span className="text-foreground">A </span>
+          <span className="text-gradient-aura">Inteligência</span>
           <br />
-          <span className="text-foreground">com </span>
-          <span className="text-gradient-neon">Inteligência</span>
+          <span className="text-foreground">por trás do </span>
+          <span className="text-gradient-neon">Código</span>
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>

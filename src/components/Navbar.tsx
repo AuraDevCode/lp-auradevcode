@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import auraLogo from "@/assets/aura-logo.png";
 
 const navLinks = [
   { label: "Serviços", href: "#servicos" },
@@ -32,10 +33,12 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-aura-purple to-digital-cyan flex items-center justify-center group-hover:glow-purple transition-all duration-300">
-              <span className="text-xl font-bold text-background">A</span>
-            </div>
+          <a href="#" className="flex items-center gap-3 group">
+            <img 
+              src={auraLogo} 
+              alt="Aura Dev Logo" 
+              className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
             <span className="text-xl font-bold">Aura Dev</span>
           </a>
 
