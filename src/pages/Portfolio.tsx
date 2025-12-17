@@ -64,6 +64,36 @@ const projects = [
     gradient: "from-aura-purple to-digital-cyan",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
   },
+  {
+    id: 7,
+    title: "SoulBronze",
+    category: "Landing Page",
+    description: "Landing page moderna e responsiva para empresa de bronzeamento, focada em conversão e experiência do usuário.",
+    tags: ["Next.js", "Tailwind CSS", "SEO"],
+    metrics: { users: "5K+", year: "2024" },
+    gradient: "from-aura-purple to-neon-green",
+    image: "https://images.unsplash.com/photo-1598550463404-d5141517111a?w=800&h=600&fit=crop",
+  },
+  {
+    id: 8,
+    title: "Laryssa Alves",
+    category: "Landing Page",
+    description: "Landing page profissional para neuropsicopedagoga, destacando serviços, depoimentos e informações de contato.",
+    tags: ["React", "Tailwind CSS", "UI/UX"],
+    metrics: { users: "2K+", year: "2024" },
+    gradient: "from-digital-cyan to-aura-purple",
+    image: "https://images.unsplash.com/photo-1517245381794-f2e702454208?w=800&h=600&fit=crop",
+  },
+  {
+    id: 9,
+    title: "Kalenda",
+    category: "Sistema Web",
+    description: "Sistema de gestão de agendamentos e controle financeiro desenvolvido em Laravel, otimizando processos para clínicas e serviços.",
+    tags: ["Laravel", "PHP", "MySQL", "React"],
+    metrics: { users: "1K+", year: "2024" },
+    gradient: "from-neon-green to-digital-cyan",
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+  },
 ];
 
 const Portfolio = () => {
