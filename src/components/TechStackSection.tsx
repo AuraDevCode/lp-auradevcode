@@ -3,13 +3,12 @@ const technologies = [
   { name: "Next.js", category: "Frontend" },
   { name: "TypeScript", category: "Language" },
   { name: "Node.js", category: "Backend" },
-  { name: "Python", category: "Backend" },
-  { name: "PostgreSQL", category: "Database" },
+  { name: "PHP", category: "Backend" },
+  { name: "MySQL", category: "Database" },
   { name: "MongoDB", category: "Database" },
   { name: "AWS", category: "Cloud" },
   { name: "Docker", category: "DevOps" },
   { name: "Kubernetes", category: "DevOps" },
-  { name: "Figma", category: "Design" },
   { name: "Tailwind", category: "Frontend" },
 ];
 
