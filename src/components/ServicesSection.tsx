@@ -1,4 +1,4 @@
-import { Globe, Smartphone, Cloud, Figma, ArrowUpRight } from "lucide-react";
+import { Globe, Smartphone, Cloud, Palette, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
@@ -23,10 +23,10 @@ const services = [
     color: "aura-purple",
   },
   {
-    icon: Figma,
+    icon: Palette,
     title: "UI/UX Design",
     description: "Interfaces que encantam e convertem. Design system completo, prototipação e testes de usabilidade.",
-    tags: ["Figma", "Design System", "User Research"],
+    tags: ["Adobe XD", "Design System", "User Research"],
     color: "primary",
   },
 ];
