@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowUpRight, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import auraLogo from "@/assets/aura-logo.png";
+import soulbronzeImage from "@/assets/soulbronze.png"; // Import the new image
 
 const projects = [
   {
@@ -12,7 +13,8 @@ const projects = [
     tags: ["Next.js", "Tailwind CSS", "SEO"],
     metrics: { users: "5K+", year: "2024" },
     gradient: "from-aura-purple to-neon-green",
-    image: "https://images.unsplash.com/photo-1598550463404-d5141517111a?w=800&h=600&fit=crop",
+    image: soulbronzeImage, // Use the imported image
+    link: "https://www.soulbronze.com.br/", // Add the external link
   },
   {
     id: 8,
@@ -88,8 +90,11 @@ const Portfolio = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <div
+              <a
                 key={project.id}
+                href={project.link} // Make the entire card a link
+                target="_blank" // Open in new tab
+                rel="noopener noreferrer"
                 className="group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_50px_hsl(271_76%_53%/0.2)]"
               >
                 {/* Image */}
@@ -145,7 +150,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
