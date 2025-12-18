@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import auraLogo from "@/assets/aura-logo.png";
 import soulbronzeImage from "@/assets/soulbronze.png";
-import laryssaAlvesImage from "@/assets/laryssa-alves.png"; // Import the new image
+import laryssaAlvesImage from "@/assets/laryssa-alves.png"; // Import the updated image
 
 const projects = [
   {
@@ -25,8 +25,8 @@ const projects = [
     tags: ["React", "Tailwind CSS", "UI/UX"],
     metrics: { users: "2K+", year: "2024" },
     gradient: "from-digital-cyan to-aura-purple",
-    image: laryssaAlvesImage, // Use the imported image
-    link: "https://laryssaalves.auradevcode.com.br/", // Add the external link
+    image: laryssaAlvesImage, // Use the updated imported image
+    link: "https://laryssaalves.auradevcode.com.br/",
   },
   {
     id: 9,
