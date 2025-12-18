@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import auraLogo from "@/assets/aura-logo.png";
 import soulbronzeImage from "@/assets/soulbronze.png";
-import laryssaAlvesImage from "@/assets/laryssa-alves.png"; // Import the updated image
+import laryssaAlvesImage from "@/assets/laryssa-alves.png";
+import gatoacaiImage from "@/assets/gatoacai.png"; // Import the new image
 
 const projects = [
   {
@@ -25,7 +26,7 @@ const projects = [
     tags: ["React", "Tailwind CSS", "UI/UX"],
     metrics: { users: "2K+", year: "2024" },
     gradient: "from-digital-cyan to-aura-purple",
-    image: laryssaAlvesImage, // Use the updated imported image
+    image: laryssaAlvesImage,
     link: "https://laryssaalves.auradevcode.com.br/",
   },
   {
@@ -37,6 +38,17 @@ const projects = [
     metrics: { users: "1K+", year: "2024" },
     gradient: "from-neon-green to-digital-cyan",
     image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+  },
+  {
+    id: 10,
+    title: "Gato Açaí",
+    category: "Landing Page",
+    description: "Landing page para delivery de açaí, com carrinho de compras e integração para pedidos via WhatsApp.",
+    tags: ["React", "Tailwind CSS", "E-commerce"],
+    metrics: { users: "3K+", year: "2024" },
+    gradient: "from-aura-purple to-digital-cyan",
+    image: gatoacaiImage, // Use the imported image
+    link: "https://gatoacai.auradevcode.com.br/", // Add the external link
   },
 ];
 
