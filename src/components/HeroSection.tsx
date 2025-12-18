@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import auraLogo from "@/assets/aura-logo.png";
 
-const whatsappLink = "https://wa.me/5579996827342?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Aura%20Dev.";
+const whatsappLink = "https://wa.me/5579996867342?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Aura%20Dev.";
 
 const HeroSection = () => {
   return (

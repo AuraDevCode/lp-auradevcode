@@ -2,7 +2,7 @@ import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 import auraLogo from "@/assets/aura-logo.png";
 
-const whatsappLink = "https://wa.me/5579996827342?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20call%20estrat%C3%A9gica%20com%20a%20Aura%20Dev.";
+const whatsappLink = "https://wa.me/5579996867342?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20call%20estrat%C3%A9gica%20com%20a%20Aura%20Dev.";
 
 const FooterSection = () => {
   return (
@@ -89,7 +89,7 @@ const FooterSection = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-primary" />
-                  <span>+55 79 99682-7342</span>
+                  <span>+55 79 99686-7342</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-primary" />
@@ -109,7 +109,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 
