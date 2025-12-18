@@ -2,7 +2,8 @@ import { ArrowLeft, ArrowUpRight, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import auraLogo from "@/assets/aura-logo.png";
-import soulbronzeImage from "@/assets/soulbronze.png"; // Import the new image
+import soulbronzeImage from "@/assets/soulbronze.png";
+import laryssaAlvesImage from "@/assets/laryssa-alves.png"; // Import the new image
 
 const projects = [
   {
@@ -13,8 +14,8 @@ const projects = [
     tags: ["Next.js", "Tailwind CSS", "SEO"],
     metrics: { users: "5K+", year: "2024" },
     gradient: "from-aura-purple to-neon-green",
-    image: soulbronzeImage, // Use the imported image
-    link: "https://www.soulbronze.com.br/", // Add the external link
+    image: soulbronzeImage,
+    link: "https://www.soulbronze.com.br/",
   },
   {
     id: 8,
@@ -24,7 +25,8 @@ const projects = [
     tags: ["React", "Tailwind CSS", "UI/UX"],
     metrics: { users: "2K+", year: "2024" },
     gradient: "from-digital-cyan to-aura-purple",
-    image: "https://images.unsplash.com/photo-1517245381794-f2e702454208?w=800&h=600&fit=crop",
+    image: laryssaAlvesImage, // Use the imported image
+    link: "https://laryssaalves.auradevcode.com.br/", // Add the external link
   },
   {
     id: 9,
