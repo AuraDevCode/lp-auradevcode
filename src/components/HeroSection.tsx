@@ -2,8 +2,9 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import auraLogo from "@/assets/aura-logo.png";
+import { getWhatsappLink, siteConfig, whatsappMessages } from "@/config/site";
 
-const whatsappLink = "https://wa.me/5579996867342?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Aura%20Dev.";
+const whatsappLink = getWhatsappLink(whatsappMessages.startProject);
 
 const HeroSection = () => {
   return (
@@ -21,7 +22,7 @@ const HeroSection = () => {
         <div className="mb-8 animate-fade-up">
           <img 
             src={auraLogo} 
-            alt="Aura Dev Logo" 
+            alt={`${siteConfig.company.name} Logo`} 
             className="w-24 h-24 md:w-32 md:h-32 mx-auto object-contain animate-float"
           />
         </div>
@@ -53,7 +54,7 @@ const HeroSection = () => {
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </a>
-          <Link to="/portfolio">
+          <Link to={siteConfig.links.portfolio}>
             <Button variant="outline" className="px-8 py-6 text-lg rounded-lg border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 w-full">
               Ver portfólio
             </Button>

@@ -1,4 +1,5 @@
 import { Zap, Shield, Rocket } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 const SolutionSection = () => {
   return (
@@ -21,7 +22,7 @@ const SolutionSection = () => {
           </h2>
 
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Na Aura Dev, não entregamos apenas código. Entregamos 
+            Na {siteConfig.company.name}, não entregamos apenas código. Entregamos 
             <span className="text-foreground font-medium"> soluções pensadas</span> que 
             transformam a forma como sua empresa opera.
           </p>
