@@ -1,10 +1,10 @@
-import { ArrowLeft, ArrowUpRight, Calendar, Users } from "lucide-react";
+import { ArrowUpRight, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import auraLogo from "@/assets/aura-logo.png";
 import soulbronzeImage from "@/assets/soulbronze.png";
 import laryssaAlvesImage from "@/assets/laryssa-alves.png";
-import gatoacaiImage from "@/assets/gatoacai.png"; // Import the new image
+import gatoacaiImage from "@/assets/gatoacai.png";
 
 const projects = [
   {
@@ -13,7 +13,7 @@ const projects = [
     category: "Landing Page",
     description: "Landing page moderna e responsiva para empresa de bronzeamento, focada em conversão e experiência do usuário.",
     tags: ["Next.js", "Tailwind CSS", "SEO"],
-    metrics: { users: "5K+", year: "2024" },
+    metrics: { users: "5K+", year: "2026" },
     gradient: "from-aura-purple to-neon-green",
     image: soulbronzeImage,
     link: "https://www.soulbronze.com.br/",
@@ -24,7 +24,7 @@ const projects = [
     category: "Landing Page",
     description: "Landing page profissional para neuropsicopedagoga, destacando serviços, depoimentos e informações de contato.",
     tags: ["React", "Tailwind CSS", "UI/UX"],
-    metrics: { users: "2K+", year: "2024" },
+    metrics: { users: "2K+", year: "2026" },
     gradient: "from-digital-cyan to-aura-purple",
     image: laryssaAlvesImage,
     link: "https://laryssaalves.auradevcode.com.br/",
@@ -35,9 +35,10 @@ const projects = [
     category: "Sistema Web",
     description: "Sistema de gestão de agendamentos e controle financeiro desenvolvido em Laravel, otimizando processos para clínicas e serviços.",
     tags: ["Laravel", "PHP", "MySQL", "React"],
-    metrics: { users: "1K+", year: "2024" },
+    metrics: { users: "1K+", year: "2026" },
     gradient: "from-neon-green to-digital-cyan",
     image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+    link: "https://appkalenda.auradevcode.com.br/",
   },
   {
     id: 10,
@@ -45,38 +46,27 @@ const projects = [
     category: "Landing Page",
     description: "Landing page para delivery de açaí, com carrinho de compras e integração para pedidos via WhatsApp.",
     tags: ["React", "Tailwind CSS", "E-commerce"],
-    metrics: { users: "3K+", year: "2024" },
+    metrics: { users: "3K+", year: "2026" },
     gradient: "from-aura-purple to-digital-cyan",
-    image: gatoacaiImage, // Use the imported image
-    link: "https://gatoacai.auradevcode.com.br/", // Add the external link
+    image: gatoacaiImage,
+    link: "https://gatoacai.auradevcode.com.br/",
+  },
+  {
+    id: 11,
+    title: "Minha Obra",
+    category: "Sistema Web + App Mobile",
+    description: "Gerenciador de obras com aplicativo mobile para acompanhar etapas, equipes, tarefas e informações do canteiro em tempo real.",
+    tags: ["React", "Mobile App", "Gestão de Obras"],
+    metrics: { users: "500+", year: "2026" },
+    gradient: "from-digital-cyan to-neon-green",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
+    link: "https://obra.auradevcode.com.br/",
   },
 ];
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center justify-between h-20">
-            <Link to="/" className="flex items-center gap-3 group">
-              <img 
-                src={auraLogo} 
-                alt="Aura Dev Logo" 
-                className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
-              />
-              <span className="text-xl font-bold">Aura Dev</span>
-            </Link>
-            <Link to="/">
-              <Button variant="outline" className="gap-2">
-                <ArrowLeft className="w-4 h-4" />
-                Voltar
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </header>
-
       {/* Hero */}
       <section className="pt-32 pb-16 relative overflow-hidden cyber-grid">
         <div className="absolute inset-0">
