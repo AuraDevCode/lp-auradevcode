@@ -5,6 +5,7 @@ import auraLogo from "@/assets/aura-logo.png";
 import soulbronzeImage from "@/assets/soulbronze.png";
 import laryssaAlvesImage from "@/assets/laryssa-alves.png";
 import gatoacaiImage from "@/assets/gatoacai.png";
+import { siteConfig } from "@/config/site";
 
 const projects = [
   {
@@ -174,7 +175,7 @@ const Portfolio = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Vamos conversar sobre como transformar sua ideia em realidade.
             </p>
-            <Link to="/#contato">
+            <Link to={siteConfig.links.sections.contact}>
               <Button className="neon-button px-8 py-6 text-lg rounded-lg">
                 Iniciar meu projeto
                 <ArrowUpRight className="ml-2 w-5 h-5" />
@@ -189,11 +190,11 @@ const Portfolio = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3">
-              <img src={auraLogo} alt="Aura Dev" className="w-8 h-8 object-contain" />
-              <span className="font-bold">Aura Dev</span>
+              <img src={auraLogo} alt={siteConfig.company.name} className="w-8 h-8 object-contain" />
+              <span className="font-bold">{siteConfig.company.name}</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              © 2024 Aura Dev. A inteligência por trás do código.
+              © {siteConfig.company.copyrightYear} {siteConfig.company.name}. {siteConfig.company.tagline}.
             </p>
           </div>
         </div>

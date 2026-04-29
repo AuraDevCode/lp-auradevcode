@@ -3,15 +3,16 @@ import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import auraLogo from "@/assets/aura-logo.png";
+import { getWhatsappLink, siteConfig, whatsappMessages } from "@/config/site";
 
 const navLinks = [
-  { label: "Serviços", href: "/#servicos", isRoute: true },
-  { label: "Diferenciais", href: "/#diferenciais", isRoute: true },
-  { label: "Portfólio", href: "/portfolio", isRoute: true },
-  { label: "Contato", href: "/#contato", isRoute: true },
+  { label: "Serviços", href: siteConfig.links.sections.services, isRoute: true },
+  { label: "Diferenciais", href: siteConfig.links.sections.differentials, isRoute: true },
+  { label: "Portfólio", href: siteConfig.links.portfolio, isRoute: true },
+  { label: "Contato", href: siteConfig.links.sections.contact, isRoute: true },
 ];
 
-const whatsappLink = "https://wa.me/5579996867342?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Aura%20Dev.";
+const whatsappLink = getWhatsappLink(whatsappMessages.startProject);
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,10 +40,10 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-3 group">
             <img 
               src={auraLogo} 
-              alt="Aura Dev Logo" 
+              alt={`${siteConfig.company.name} Logo`} 
               className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
             />
-            <span className="text-xl font-bold">Aura Dev</span>
+            <span className="text-xl font-bold">{siteConfig.company.name}</span>
           </Link>
 
           {/* Desktop Nav */}

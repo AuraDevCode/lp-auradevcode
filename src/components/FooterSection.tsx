@@ -1,8 +1,9 @@
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 import auraLogo from "@/assets/aura-logo.png";
+import { getWhatsappLink, siteConfig, whatsappMessages } from "@/config/site";
 
-const whatsappLink = "https://wa.me/5579996867342?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20call%20estrat%C3%A9gica%20com%20a%20Aura%20Dev.";
+const whatsappLink = getWhatsappLink(whatsappMessages.scheduleCall);
 
 const FooterSection = () => {
   return (
@@ -44,20 +45,20 @@ const FooterSection = () => {
               <div className="flex items-center gap-3 mb-4">
                 <img 
                   src={auraLogo} 
-                  alt="Aura Dev Logo" 
+                  alt={`${siteConfig.company.name} Logo`} 
                   className="w-12 h-12 object-contain"
                 />
-                <span className="text-2xl font-bold">Aura Dev</span>
+                <span className="text-2xl font-bold">{siteConfig.company.name}</span>
               </div>
               <p className="text-muted-foreground max-w-sm mb-2 italic font-medium text-gradient-aura">
-                A inteligência por trás do código
+                {siteConfig.company.tagline}
               </p>
               <p className="text-muted-foreground max-w-sm mb-6">
-                Software house premium. Transformamos complexidade em elegância digital.
+                {siteConfig.company.description}
               </p>
               <div className="flex gap-4">
                 <a
-                  href="https://instagram.com/auradev.io" // Exemplo de link para Instagram
+                  href={siteConfig.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-lg bg-card border border-border hover:border-primary/50 text-sm font-medium text-muted-foreground hover:text-foreground transition-all duration-300"
@@ -85,15 +86,15 @@ const FooterSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-primary" />
-                  <span>contato.auradev@gmail.com</span>
+                  <span>{siteConfig.contact.email}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-primary" />
-                  <span>+55 79 99686-7342</span>
+                  <span>{siteConfig.contact.phoneDisplay}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-primary" />
-                  <span>Aracaju, Sergipe, Brasil</span>
+                  <span>{siteConfig.contact.location}</span>
                 </li>
               </ul>
             </div>
@@ -101,7 +102,7 @@ const FooterSection = () => {
 
           <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2024 Aura Dev. Todos os direitos reservados.
+              © {siteConfig.company.copyrightYear} {siteConfig.company.name}. Todos os direitos reservados.
             </p>
             <p className="text-sm text-muted-foreground font-mono">
               Crafted with <span className="text-primary">♥</span> and <span className="text-neon-green">clean code</span>
