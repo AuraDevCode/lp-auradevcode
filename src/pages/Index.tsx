@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import PainPointsSection from "@/components/PainPointsSection";
 import SolutionSection from "@/components/SolutionSection";
@@ -10,21 +9,20 @@ import FooterSection from "@/components/FooterSection";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
       <main>
         <HeroSection />
         <PainPointsSection />
         <SolutionSection />
-        <section id="servicos">
+        <section id="servicos" className="scroll-mt-24">
           <ServicesSection />
         </section>
-        <section id="diferenciais">
+        <section id="diferenciais" className="scroll-mt-24">
           <DifferentialsSection />
         </section>
-        <section id="tech">
+        <section id="tech" className="scroll-mt-24">
           <TechStackSection />
         </section>
-        <section id="contato">
+        <section id="contato" className="scroll-mt-24">
           <FooterSection />
         </section>
       </main>

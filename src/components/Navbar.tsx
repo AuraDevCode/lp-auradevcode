@@ -5,10 +5,10 @@ import { Button } from "./ui/button";
 import auraLogo from "@/assets/aura-logo.png";
 
 const navLinks = [
-  { label: "Serviços", href: "#servicos", isRoute: false },
-  { label: "Diferenciais", href: "#diferenciais", isRoute: false },
+  { label: "Serviços", href: "/#servicos", isRoute: true },
+  { label: "Diferenciais", href: "/#diferenciais", isRoute: true },
   { label: "Portfólio", href: "/portfolio", isRoute: true },
-  { label: "Contato", href: "#contato", isRoute: false },
+  { label: "Contato", href: "/#contato", isRoute: true },
 ];
 
 const whatsappLink = "https://wa.me/5579996867342?text=Ol%C3%A1%2C%20gostaria%20de%20iniciar%20um%20projeto%20com%20a%20Aura%20Dev.";
