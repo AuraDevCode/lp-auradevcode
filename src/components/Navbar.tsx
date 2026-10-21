@@ -7,8 +7,9 @@ import { getWhatsappLink, siteConfig, whatsappMessages } from "@/config/site";
 
 const navLinks = [
   { label: "Serviços", href: siteConfig.links.sections.services, isRoute: true },
-  { label: "Diferenciais", href: siteConfig.links.sections.differentials, isRoute: true },
-  { label: "Portfólio", href: siteConfig.links.portfolio, isRoute: true },
+  { label: "Como trabalhamos", href: siteConfig.links.sections.process, isRoute: true },
+  { label: "Projetos", href: siteConfig.links.portfolio, isRoute: true },
+  { label: "Dúvidas", href: siteConfig.links.sections.faq, isRoute: true },
   { label: "Contato", href: siteConfig.links.sections.contact, isRoute: true },
 ];
 
@@ -75,7 +76,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <Button className="neon-button px-6 py-2 rounded-lg text-sm">
-                Iniciar projeto
+                Falar no WhatsApp
               </Button>
             </a>
           </div>
@@ -120,7 +121,7 @@ const Navbar = () => {
               ))}
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <Button className="neon-button px-6 py-3 rounded-lg text-sm mt-2">
-                  Iniciar projeto
+                  Falar no WhatsApp
                 </Button>
               </a>
             </div>

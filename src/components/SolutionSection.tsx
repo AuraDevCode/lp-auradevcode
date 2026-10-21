@@ -22,29 +22,29 @@ const SolutionSection = () => {
           </h2>
 
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Na {siteConfig.company.name}, não entregamos apenas código. Entregamos 
-            <span className="text-foreground font-medium"> soluções pensadas</span> que 
-            transformam a forma como sua empresa opera.
+            Na {siteConfig.company.name}, o sistema nasce do seu processo, não de um modelo pronto.
+            Entendemos como sua empresa funciona e entregamos
+            <span className="text-foreground font-medium"> software que as pessoas usam de verdade</span>.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mt-16">
             {[
               {
                 icon: Shield,
-                title: "Blindagem Total",
-                description: "Arquitetura robusta, testes automatizados e segurança em cada linha de código.",
+                title: "Seguro e bem feito",
+                description: "Revisão de código, testes nas partes críticas e dados protegidos conforme a LGPD.",
                 color: "text-digital-cyan",
               },
               {
                 icon: Zap,
-                title: "Performance Extrema",
-                description: "Otimização agressiva. Seu software voando em milissegundos.",
+                title: "Rápido de usar",
+                description: "Telas simples, que funcionam bem no celular e no computador, inclusive offline quando faz sentido.",
                 color: "text-neon-green",
               },
               {
                 icon: Rocket,
-                title: "Escalabilidade Infinita",
-                description: "De 100 a 1 milhão de usuários sem quebrar. Cloud-native por design.",
+                title: "Pronto para crescer",
+                description: "Arquitetura organizada para receber novas funções sem refazer tudo do zero.",
                 color: "text-primary",
               },
             ].map((item, index) => (

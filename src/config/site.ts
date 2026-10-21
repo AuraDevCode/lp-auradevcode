@@ -2,24 +2,25 @@ export const siteConfig = {
   company: {
     name: "Aura Dev",
     tagline: "A inteligência por trás do código",
-    description: "Software house premium. Transformamos complexidade em elegância digital.",
+    description: "Sistemas web, apps e automação com IA. Do levantamento à publicação.",
     copyrightYear: "2026",
   },
   contact: {
     email: "contato.auradev@gmail.com",
-    phoneDisplay: "+55 79 99686-7342",
-    whatsappNumber: "5579996867342",
+    phoneDisplay: "+55 79 99686-7342", // TODO: confirmar número comercial
+    whatsappNumber: "5579996867342", // TODO: confirmar número comercial
     location: "Aracaju, Sergipe, Brasil",
   },
   social: {
     instagram: "https://instagram.com/auradev.io",
   },
   links: {
-    website: "https://auradev.io",
+    website: "https://auradevcode.com.br",
     portfolio: "/portfolio",
     sections: {
       services: "/#servicos",
-      differentials: "/#diferenciais",
+      process: "/#como-trabalhamos",
+      faq: "/#perguntas",
       contact: "/#contato",
     },
   },
@@ -30,6 +31,6 @@ export const getWhatsappLink = (message: string) => {
 };
 
 export const whatsappMessages = {
-  startProject: `Olá, gostaria de iniciar um projeto com a ${siteConfig.company.name}.`,
-  scheduleCall: `Olá, gostaria de agendar uma call estratégica com a ${siteConfig.company.name}.`,
+  startProject: `Olá, gostaria de conversar sobre um projeto com a ${siteConfig.company.name}.`,
+  scheduleCall: `Olá, gostaria de falar com a ${siteConfig.company.name} sobre um projeto.`,
 } as const;

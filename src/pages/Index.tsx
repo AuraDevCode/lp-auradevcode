@@ -4,6 +4,7 @@ import SolutionSection from "@/components/SolutionSection";
 import ServicesSection from "@/components/ServicesSection";
 import DifferentialsSection from "@/components/DifferentialsSection";
 import TechStackSection from "@/components/TechStackSection";
+import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
 
 const Index = () => {
@@ -16,11 +17,14 @@ const Index = () => {
         <section id="servicos" className="scroll-mt-24">
           <ServicesSection />
         </section>
-        <section id="diferenciais" className="scroll-mt-24">
+        <section id="como-trabalhamos" className="scroll-mt-24">
           <DifferentialsSection />
         </section>
         <section id="tech" className="scroll-mt-24">
           <TechStackSection />
+        </section>
+        <section id="perguntas" className="scroll-mt-24">
+          <FaqSection />
         </section>
         <section id="contato" className="scroll-mt-24">
           <FooterSection />
