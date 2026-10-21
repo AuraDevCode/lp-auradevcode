@@ -5,12 +5,13 @@ import auraLogo from "@/assets/aura-logo.png";
 import soulbronzeImage from "@/assets/soulbronze.png";
 import laryssaAlvesImage from "@/assets/laryssa-alves.png";
 import gatoacaiImage from "@/assets/gatoacai.png";
-import minhaObraLogo from "@/assets/projetos/minha-obra-logo.webp";
+import minhaObraCapa from "@/assets/projetos/minha-obra-capa.webp";
 import finoraCapa from "@/assets/projetos/finora-capa.webp";
-import kalendaLogo from "@/assets/projetos/kalenda-logo.webp";
+import kalendaCapa from "@/assets/projetos/kalenda-capa.webp";
 import vedraCapa from "@/assets/projetos/vedra-capa.webp";
-import auraquizLogo from "@/assets/projetos/auraquiz-logo.webp";
-import auraeduLogo from "@/assets/projetos/auraedu-logo.svg";
+import auraquizCapa from "@/assets/projetos/auraquiz-capa.webp";
+import auraeduCapa from "@/assets/projetos/auraedu-capa.webp";
+import simuladorCapa from "@/assets/projetos/simulador-capa.webp";
 import { getWhatsappLink, siteConfig, whatsappMessages } from "@/config/site";
 
 type ProjectLink = { label: string; href: string };
@@ -25,16 +26,14 @@ type Product = {
   icon: LucideIcon;
   gradient: string;
   links: ProjectLink[];
-  /** Full-bleed cover (store feature graphic) */
+  /** Cover art, 1024x500 like a Play Store feature graphic */
   cover?: string;
-  /** Logo shown centered on a dark background */
-  logo?: string;
 };
 
 const products: Product[] = [
   {
     title: "Minha Obra",
-    logo: minhaObraLogo,
+    cover: minhaObraCapa,
     status: "Publicado na Google Play",
     platform: "Android + Web",
     description:
@@ -63,7 +62,7 @@ const products: Product[] = [
   },
   {
     title: "Kalenda",
-    logo: kalendaLogo,
+    cover: kalendaCapa,
     status: "Em desenvolvimento",
     platform: "Web (SaaS)",
     description:
@@ -89,7 +88,7 @@ const products: Product[] = [
   },
   {
     title: "AuraQuiz",
-    logo: auraquizLogo,
+    cover: auraquizCapa,
     status: "MVP no ar",
     platform: "Web + Android",
     description:
@@ -102,7 +101,7 @@ const products: Product[] = [
   },
   {
     title: "AuraEdu",
-    logo: auraeduLogo,
+    cover: auraeduCapa,
     status: "MVP no ar",
     platform: "Web",
     description:
@@ -115,6 +114,7 @@ const products: Product[] = [
   },
   {
     title: "Simulador Fator R",
+    cover: simuladorCapa,
     status: "Ferramenta gratuita",
     platform: "Web",
     description:
@@ -191,7 +191,7 @@ const Portfolio = () => {
                 {/* Cover */}
                 <div
                   className={`relative h-40 overflow-hidden flex items-center justify-center ${
-                    product.cover ? "" : product.logo ? "bg-[#0e0f10]" : `bg-gradient-to-br ${product.gradient}`
+                    product.cover ? "" : `bg-gradient-to-br ${product.gradient}`
                   }`}
                 >
                   {product.cover ? (
@@ -201,20 +201,10 @@ const Portfolio = () => {
                       loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                  ) : product.logo ? (
-                    <>
-                      <div className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-20`} />
-                      <img
-                        src={product.logo}
-                        alt={`Logo do ${product.title}`}
-                        loading="lazy"
-                        className="relative max-h-24 max-w-[60%] object-contain group-hover:scale-105 transition-transform duration-700"
-                      />
-                    </>
                   ) : (
                     <product.icon className="w-16 h-16 text-background/90" aria-hidden="true" />
                   )}
-                  <div className="absolute top-4 left-4">
+                  <div className="absolute top-3 right-3">
                     <span className="px-3 py-1 text-xs font-mono rounded-full bg-background/80 backdrop-blur-sm text-foreground">
                       {product.status}
                     </span>
