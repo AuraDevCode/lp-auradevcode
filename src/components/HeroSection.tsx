@@ -29,34 +29,34 @@ const HeroSection = () => {
 
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 mb-8 animate-fade-up">
           <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm font-mono text-primary">Software House Premium</span>
+          <span className="text-sm font-mono text-primary">Sistemas · Apps · IA</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <span className="text-foreground">A </span>
-          <span className="text-gradient-aura">Inteligência</span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <span className="text-foreground">Sistemas, apps e </span>
+          <span className="text-gradient-aura">automação com IA</span>
           <br />
-          <span className="text-foreground">por trás do </span>
-          <span className="text-gradient-neon">Código</span>
+          <span className="text-foreground">para o seu </span>
+          <span className="text-gradient-neon">negócio</span>
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          Transformamos ideias complexas em soluções digitais elegantes. 
-          <span className="text-digital-cyan font-medium"> Clean code</span>, 
-          <span className="text-primary font-medium"> arquitetura escalável</span> e 
-          <span className="text-neon-green font-medium"> design disruptivo</span>.
+          Do levantamento ao app publicado na loja. Desenvolvimento sob medida em
+          <span className="text-digital-cyan font-medium"> web</span>,
+          <span className="text-primary font-medium"> Android</span> e
+          <span className="text-neon-green font-medium"> inteligência artificial</span>.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
             <Button className="neon-button px-8 py-6 text-lg rounded-lg">
-              Iniciar meu projeto
+              Falar no WhatsApp
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </a>
           <Link to={siteConfig.links.portfolio}>
             <Button variant="outline" className="px-8 py-6 text-lg rounded-lg border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 w-full">
-              Ver portfólio
+              Ver projetos
             </Button>
           </Link>
         </div>
@@ -64,9 +64,9 @@ const HeroSection = () => {
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "0.4s" }}>
           {[
-            { value: "50+", label: "Projetos entregues" },
-            { value: "99%", label: "Uptime garantido" },
-            { value: "24h", label: "Tempo de resposta" },
+            { value: "10+", label: "Projetos no ar" },
+            { value: "3", label: "Apps Android" },
+            { value: "1 dia útil", label: "Para responder" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-gradient-aura">{stat.value}</div>

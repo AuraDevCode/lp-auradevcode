@@ -1,32 +1,32 @@
-import { Globe, Smartphone, Cloud, Palette, ArrowUpRight } from "lucide-react";
+import { Globe, Smartphone, Bot, Plug, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
     icon: Globe,
-    title: "Web Development",
-    description: "Aplicações web modernas, rápidas e responsivas. React, Next.js, Node.js e as melhores tecnologias do mercado.",
-    tags: ["React", "Next.js", "TypeScript"],
+    title: "Sistemas web sob medida",
+    description: "ERP, CRM, painéis e portais do cliente feitos para o seu processo, acessíveis de qualquer lugar.",
+    tags: ["PHP", "Laravel", "React", "MySQL"],
     color: "digital-cyan",
   },
   {
     icon: Smartphone,
-    title: "Mobile Apps",
-    description: "Apps nativos e cross-platform que seus usuários vão amar. Performance e UX de primeira classe.",
-    tags: ["React Native", "Flutter", "iOS/Android"],
+    title: "Apps Android e web",
+    description: "Apps nativos em Kotlin ou híbridos com Capacitor, com publicação na Play Store inclusa.",
+    tags: ["Kotlin", "Capacitor", "Play Store"],
     color: "neon-green",
   },
   {
-    icon: Cloud,
-    title: "Cloud Architecture",
-    description: "Infraestrutura escalável, resiliente e otimizada para custos. AWS, GCP, Azure — dominamos todas.",
-    tags: ["AWS", "Kubernetes", "Terraform"],
+    icon: Bot,
+    title: "Automação com IA",
+    description: "Leitura de documentos (OCR), resumos, classificação, chatbots e agentes integrados ao seu sistema.",
+    tags: ["OpenAI", "Gemini", "OCR"],
     color: "aura-purple",
   },
   {
-    icon: Palette,
-    title: "UI/UX Design",
-    description: "Interfaces que encantam e convertem. Design system completo, prototipação e testes de usabilidade.",
-    tags: ["Adobe XD", "Design System", "User Research"],
+    icon: Plug,
+    title: "Integrações e APIs",
+    description: "WhatsApp, pagamentos, Google Calendar, webhooks e APIs para conectar os sistemas que você já usa.",
+    tags: ["WhatsApp", "Asaas", "Webhooks"],
     color: "primary",
   },
 ];
@@ -71,7 +71,7 @@ const ServicesSection = () => {
             <span className="text-gradient-aura">produção</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Stack completa para construir, escalar e manter seu produto digital.
+            Do primeiro rascunho ao sistema rodando, com suporte depois da entrega.
           </p>
         </div>
 

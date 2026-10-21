@@ -17,20 +17,20 @@ const FooterSection = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              Pronto para <span className="text-gradient-aura">elevar</span> seu software?
+              Tem um projeto em <span className="text-gradient-aura">mente</span>?
             </h2>
             <p className="text-xl text-muted-foreground mb-10">
-              Agende uma call estratégica gratuita. Em 30 minutos, vamos entender seu desafio 
-              e mostrar como a Aura pode transformar sua visão em realidade.
+              Conte o que você precisa pelo WhatsApp. Respondemos em até 1 dia útil
+              e, se fizer sentido, marcamos uma conversa sem custo.
             </p>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <Button className="neon-button px-10 py-7 text-lg rounded-xl">
-                Agendar call gratuita
+                Falar no WhatsApp
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </a>
             <p className="text-sm text-muted-foreground mt-4">
-              Sem compromisso. Sem vendas agressivas. Apenas valor.
+              Atendimento remoto em todo o Brasil.
             </p>
           </div>
         </div>
@@ -72,9 +72,9 @@ const FooterSection = () => {
             <div>
               <h4 className="font-semibold mb-4 text-foreground">Serviços</h4>
               <ul className="space-y-3 text-muted-foreground">
-                {["Web Development", "Mobile Apps", "Cloud Architecture", "UI/UX Design"].map((link) => (
+                {["Sistemas web sob medida", "Apps Android e web", "Automação com IA", "Integrações e APIs"].map((link) => (
                   <li key={link}>
-                    <a href="#" className="hover:text-primary transition-colors">{link}</a>
+                    <a href={siteConfig.links.sections.services} className="hover:text-primary transition-colors">{link}</a>
                   </li>
                 ))}
               </ul>
@@ -105,7 +105,7 @@ const FooterSection = () => {
               © {siteConfig.company.copyrightYear} {siteConfig.company.name}. Todos os direitos reservados.
             </p>
             <p className="text-sm text-muted-foreground font-mono">
-              Crafted with <span className="text-primary">♥</span> and <span className="text-neon-green">clean code</span>
+              Feito com <span className="text-primary">♥</span> em <span className="text-neon-green">Aracaju/SE</span>
             </p>
           </div>
         </div>

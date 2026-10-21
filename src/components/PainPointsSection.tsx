@@ -3,22 +3,22 @@ import { AlertTriangle, Clock, Code2, Palette } from "lucide-react";
 const painPoints = [
   {
     icon: Clock,
-    title: "Sistemas Lentos",
-    description: "Seu software trava, demora para carregar e frustra seus usuários. Performance ruim = clientes perdidos.",
+    title: "Planilhas e retrabalho",
+    description: "Informação espalhada em planilhas, papel e WhatsApp. O mesmo dado é digitado várias vezes e algo sempre se perde.",
     color: "text-destructive",
     glowClass: "hover:border-destructive/50 hover:shadow-[0_0_40px_hsl(0_84%_60%/0.3)]",
   },
   {
     icon: Code2,
-    title: "Código Legado",
-    description: "Base de código antiga, difícil de manter e impossível de escalar. Cada nova feature é uma dor de cabeça.",
+    title: "Sistema difícil de mudar",
+    description: "O sistema atual é antigo e cada ajuste demora semanas, ou ninguém mais sabe como ele funciona.",
     color: "text-yellow-500",
     glowClass: "hover:border-yellow-500/50 hover:shadow-[0_0_40px_hsl(45_100%_50%/0.3)]",
   },
   {
     icon: Palette,
-    title: "Design Amador",
-    description: "Interface ultrapassada que não transmite profissionalismo. Sua marca merece muito mais.",
+    title: "Atendimento que não escala",
+    description: "O WhatsApp lota, agendamentos e cobranças são feitos à mão e o cliente espera mais do que deveria.",
     color: "text-orange-500",
     glowClass: "hover:border-orange-500/50 hover:shadow-[0_0_40px_hsl(25_100%_50%/0.3)]",
   },
@@ -34,10 +34,10 @@ const PainPointsSection = () => {
             <span className="text-sm font-mono text-destructive">Problemas Comuns</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Seu software está <span className="text-destructive">te travando</span>?
+            O que está <span className="text-destructive">te travando</span>?
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Reconheça os sinais de que é hora de uma transformação digital real.
+            Sinais de que um sistema sob medida já se paga.
           </p>
         </div>
 
